@@ -16,7 +16,7 @@ public class CourseDaoList implements CourseDao {
       course.setStudents(oldCourse.getStudents());
 
       courses.remove(oldCourse);
-    } catch (NoSuchElementException e) {}
+    } catch (NoSuchElementException ignored) {}
     finally {
       courses.add(course);
     }

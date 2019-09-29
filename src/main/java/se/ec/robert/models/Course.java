@@ -31,7 +31,7 @@ public class Course {
   public void unregister(Student student) {
     try {
       students.remove(student);
-    } catch (NoSuchElementException e) {}
+    } catch (NoSuchElementException ignored) {}
   }
 
   public int getId() {

@@ -30,7 +30,7 @@ public class SchoolManager {
     try {
       Course course = findCourseById(courseId);
       course.register(studentDao.findById(studentId));
-    } catch (NoSuchElementException e) {}
+    } catch (NoSuchElementException ignored) {}
   }
 
   public void removeStudentFromCourse(int studentId, int courseId) {
@@ -38,7 +38,7 @@ public class SchoolManager {
       Course course = findCourseById(courseId);
       Student student = findStudentById(studentId);
       course.unregister(student);
-    } catch (NoSuchElementException e) {}
+    } catch (NoSuchElementException ignored) {}
   }
 
   public Student editStudent(int id, String name, String email, String address) {

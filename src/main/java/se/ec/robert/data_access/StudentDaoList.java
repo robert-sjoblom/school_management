@@ -12,7 +12,7 @@ public class StudentDaoList implements StudentDao {
   public Student saveStudent(Student student) {
     try {
       students.remove(findById(student.getId()));
-    } catch (NoSuchElementException e) {}
+    } catch (NoSuchElementException ignored) {}
     finally {
       students.add(student);
     }
