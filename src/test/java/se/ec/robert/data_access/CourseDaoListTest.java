@@ -5,11 +5,11 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.time.LocalDate;
-import models.Student;
+import se.ec.robert.models.Student;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import models.Course;
+import se.ec.robert.models.Course;
 
 /**
  * Unit test for simple App.

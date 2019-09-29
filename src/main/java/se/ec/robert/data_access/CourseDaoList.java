@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
-import models.Course;
+import se.ec.robert.models.Course;
 
 public class CourseDaoList implements CourseDao {
   private static ArrayList<Course> courses = new ArrayList<>();

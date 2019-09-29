@@ -1,4 +1,4 @@
-package models;
+package se.ec.robert.models;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -6,8 +6,6 @@ import static org.junit.Assert.assertTrue;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import models.Course;
-import models.Student;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

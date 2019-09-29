@@ -2,7 +2,7 @@ package se.ec.robert.data_access;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import models.Course;
+import se.ec.robert.models.Course;
 
 public interface CourseDao {
   Course saveCourse(Course course);

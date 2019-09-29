@@ -3,9 +3,8 @@ package se.ec.robert;
 import static org.junit.Assert.*;
 
 import java.time.LocalDate;
-import models.Course;
-import models.Student;
-import org.junit.After;
+import se.ec.robert.models.Course;
+import se.ec.robert.models.Student;
 import org.junit.Before;
 import org.junit.Test;
 import se.ec.robert.data_access.CourseDao;

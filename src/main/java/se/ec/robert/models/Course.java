@@ -1,4 +1,4 @@
-package models;
+package se.ec.robert.models;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

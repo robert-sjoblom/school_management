@@ -2,10 +2,9 @@ package se.ec.robert;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.NoSuchElementException;
-import models.Course;
-import models.Student;
+import se.ec.robert.models.Course;
+import se.ec.robert.models.Student;
 import se.ec.robert.data_access.CourseDao;
 import se.ec.robert.data_access.CourseDaoList;
 import se.ec.robert.data_access.StudentDao;

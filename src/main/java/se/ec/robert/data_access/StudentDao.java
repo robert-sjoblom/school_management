@@ -1,7 +1,7 @@
 package se.ec.robert.data_access;
 
 import java.util.ArrayList;
-import models.Student;
+import se.ec.robert.models.Student;
 
 public interface StudentDao {
   Student saveStudent(Student student);

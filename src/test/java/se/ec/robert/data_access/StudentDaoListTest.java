@@ -8,7 +8,7 @@ import java.util.NoSuchElementException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import models.Student;
+import se.ec.robert.models.Student;
 
 /**
  * Unit test for simple App.

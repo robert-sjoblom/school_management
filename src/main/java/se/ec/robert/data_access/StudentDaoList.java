@@ -3,7 +3,7 @@ package se.ec.robert.data_access;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
-import models.Student;
+import se.ec.robert.models.Student;
 
 public class StudentDaoList implements StudentDao {
   private final static ArrayList<Student> students = new ArrayList<>();
