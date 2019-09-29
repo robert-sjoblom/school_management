@@ -7,10 +7,10 @@ import java.util.NoSuchElementException;
 import java.util.Objects;
 
 public class Course {
-  private int id;
-  private String courseName;
-  private LocalDate startDate;
-  private int weekDuration;
+  private final int id;
+  private final String courseName;
+  private final LocalDate startDate;
+  private final int weekDuration;
   private List<Student> students;
 
   public Course(int id, String courseName, LocalDate startDate, int weekDuration) {
@@ -46,7 +46,7 @@ public class Course {
     return startDate;
   }
 
-  public int getWeekDuration() {
+  private int getWeekDuration() {
     return weekDuration;
   }
 

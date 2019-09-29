@@ -6,8 +6,9 @@ import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 import se.ec.robert.models.Course;
 
+@SuppressWarnings("ALL")
 public class CourseDaoList implements CourseDao {
-  private static ArrayList<Course> courses = new ArrayList<>();
+  private static final ArrayList<Course> courses = new ArrayList<>();
 
   @Override
   public Course saveCourse(Course course) {

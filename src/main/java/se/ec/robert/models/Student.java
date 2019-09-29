@@ -3,10 +3,10 @@ package se.ec.robert.models;
 import java.util.Objects;
 
 public class Student {
-  private int id;
-  private String name;
-  private String email;
-  private String address;
+  private final int id;
+  private final String name;
+  private final String email;
+  private final String address;
 
   public Student(int id, String name, String email, String address) {
     this.id = id;
@@ -27,7 +27,7 @@ public class Student {
     return email;
   }
 
-  public String getAddress() {
+  private String getAddress() {
     return address;
   }
 
