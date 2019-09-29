@@ -1,4 +1,4 @@
-package se.ec.robert;
+package models;
 
 import java.util.Objects;
 

@@ -1,7 +1,8 @@
-package se.ec.robert;
+package models;
 
 import static org.junit.Assert.assertEquals;
 
+import models.Student;
 import org.junit.Test;
 
 public class StudentTest {

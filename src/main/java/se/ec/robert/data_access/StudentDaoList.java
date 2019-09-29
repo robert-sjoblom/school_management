@@ -3,17 +3,19 @@ package se.ec.robert.data_access;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
-import se.ec.robert.Student;
+import models.Student;
 
 public class StudentDaoList implements StudentDao {
   private final static ArrayList<Student> students = new ArrayList<>();
 
   @Override
   public Student saveStudent(Student student) {
-    if (students.contains(student)) {
-      throw new IllegalArgumentException("That id is already present!");
+    try {
+      students.remove(findById(student.getId()));
+    } catch (NoSuchElementException e) {}
+    finally {
+      students.add(student);
     }
-    students.add(student);
 
     return student;
   }

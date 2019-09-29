@@ -1,8 +1,9 @@
-package se.ec.robert;
+package models;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Objects;
 
 public class Course {
@@ -22,10 +23,15 @@ public class Course {
 
   public void register(Student student) {
     students.add(student);
+    // if this returns itself, we can use the return to register the course on the student too
+    // this could also just call on student itself and register self I guess
+    // maybe that's the more pragmatic approach?
   }
 
   public void unregister(Student student) {
-    students.remove(student);
+    try {
+      students.remove(student);
+    } catch (NoSuchElementException e) {}
   }
 
   public int getId() {
@@ -82,5 +88,9 @@ public class Course {
 
   public void clear() {
     students.clear();
+  }
+
+  public void setStudents(List<Student> students) {
+    this.students = students;
   }
 }
