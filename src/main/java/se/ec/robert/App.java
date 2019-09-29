@@ -218,7 +218,4 @@ public class App {
     System.out.println("Math, 2019-01-01, 12");
   }
 
-  private static int idFromString(String s) {
-    return Integer.parseInt(s.split(",")[0].trim());
-  }
 }
